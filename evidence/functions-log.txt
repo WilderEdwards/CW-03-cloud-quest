@@ -1,0 +1,27 @@
+﻿â”‚ âœ”  All emulators ready! It is now safe to connect your app. â”‚
+â”‚ i  View Emulator UI at http://127.0.0.1:4000/               â”‚
+â”‚ Emulator       â”‚ Host:Port      â”‚ View in Emulator UI             â”‚
+â”‚ Authentication â”‚ 127.0.0.1:9099 â”‚ http://127.0.0.1:4000/auth      â”‚
+â”‚ Functions      â”‚ 127.0.0.1:5001 â”‚ http://127.0.0.1:4000/functions â”‚
+â”‚ Firestore      â”‚ 127.0.0.1:8080 â”‚ http://127.0.0.1:4000/firestore â”‚
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+i  functions: Beginning execution of "us-central1-askQuestCoach"
+>  {"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-askQuestCoach" in 19.9419ms
+i  functions: Beginning execution of "us-central1-askQuestCoach"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  coach answered yKs9T9qUeOdTHoA4csOegTvI8deu from readMyQuestState
+i  functions: Finished "us-central1-askQuestCoach" in 541.0759ms
+i  functions: Beginning execution of "us-central1-askQuestCoach"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  coach answered yKs9T9qUeOdTHoA4csOegTvI8deu from readMyQuestState
+i  functions: Finished "us-central1-askQuestCoach" in 31.9362ms
+i  functions: Beginning execution of "us-central1-askQuestCoach"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  refused a reward request from yKs9T9qUeOdTHoA4csOegTvI8deu
+i  functions: Finished "us-central1-askQuestCoach" in 48.3781ms
+i  functions: Beginning execution of "us-central1-completeToday"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-completeToday" in 928.8781ms

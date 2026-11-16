@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // the challenge is shared content, so anyone signed in may read it and nobody
+    // may write it from the app
+    match /challenges/{challengeId} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+
+    // progress is private, and only the reward function writes it. the admin sdk
+    // skips these rules, which is why completeToday validates the caller itself
+    match /users/{userId}/progress/{progressId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if false;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+﻿coach with the tool forced to fail: 503 {"error":{"message":"The coach could not read your quest right now.","status":"UNAVAILABLE"}}

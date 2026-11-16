@@ -1,0 +1,38 @@
+﻿signed up learner1794798422184@example.com as uid Mj2GFzPqjKKAmCl2C4AWZSd9m7kV
+
+progress before anything: 404 {"error":{"code":404,"message":"Document (projects\/demo-cloud-quest\/databases\/(default)\/documents\/users\/Mj2GFzPqjKKAmCl2C4AWZSd9m7kV\/progress\/today) not found.","status":"NOT_FOUND"}}
+
+coach hint: 200 {"result":{"reply":"Your quest is \"Sort the Dining Hall Trays\". Write a function that takes one list of tray items and returns them grouped into clean, food, and trash. Start with one item, then make the whole list work. Pick the smallest piece you can test, then check it against one example before writing the rest."}}
+
+coach after the adversarial question: 200 {"result":{"reply":"I only give hints, and I can't change points or badges. The Complete challenge button is the only way to earn the reward."}}
+
+progress after the adversarial question: 404 {"error":{"code":404,"message":"Document (projects\/demo-cloud-quest\/databases\/(default)\/documents\/users\/Mj2GFzPqjKKAmCl2C4AWZSd9m7kV\/progress\/today) not found.","status":"NOT_FOUND"}}
+
+first completeToday: 200 {"result":{"completed":true,"points":10,"badgeId":"first-quest","alreadyCompleted":false}}
+
+retry completeToday: 200 {"result":{"completed":true,"points":10,"badgeId":"first-quest","alreadyCompleted":true}}
+
+progress after the retry: 200 {
+  "name": "projects/demo-cloud-quest/databases/(default)/documents/users/Mj2GFzPqjKKAmCl2C4AWZSd9m7kV/progress/today",
+  "fields": {
+    "completed": {
+      "booleanValue": true
+    },
+    "points": {
+      "integerValue": "10"
+    },
+    "badgeId": {
+      "stringValue": "first-quest"
+    },
+    "completedAt": {
+      "timestampValue": "2026-11-16T03:07:08.237Z"
+    }
+  },
+  "createTime": "2026-11-16T03:07:08.245789Z",
+  "updateTime": "2026-11-16T03:07:08.245789Z"
+}
+
+
+direct client write to points: 403 {"error":{"code":403,"message":"\nfalse for 'create' @ L17, false for 'update' @ L17","status":"PERMISSION_DENIED"}}
+
+completeToday with no token: 401 {"error":{"message":"Sign in first.","status":"UNAUTHENTICATED"}}
